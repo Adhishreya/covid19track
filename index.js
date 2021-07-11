@@ -7,7 +7,8 @@ import About from "./src/About";
 
 import Symptoms from "./src/Symptoms";
 import Statistics from "./src/Statistics";
-
+import News from "./src/News";
+import Advice from "./src/Advice";
 import DisplayMapClass from "./src/DisplayMapClass";
 import Trial from "./src/Trial";
 import {
@@ -32,28 +33,46 @@ const App = () => (
       <nav style={{ display: "flex", justifyContent: "flex-end" }}>
         <Link
           className="nav"
-          to="/about"
+          to="/vaccine"
           style={{ underline: "none" }}
           style={st}
         >
-          About
+          Vaccine Status
         </Link>
         <Link
           className="nav"
-          to="/statistics"
+          to="/home"
           style={{ underline: "none" }}
           style={st}
         >
-          Statistics
+          Home
+        </Link>
+        <Link
+          className="nav"
+          to="/news"
+          style={{ underline: "none" }}
+          style={st}
+        >
+          News
+        </Link>
+        <Link
+          className="nav"
+          to="/expertAdvice"
+          style={{ underline: "none" }}
+          style={st}
+        >
+          Expert Advice
         </Link>
       </nav>
       <Switch>
-        <Route path="/about" component={About} />
+        <Route path="/vaccine" component={About} />
         <Route exact path="/">
-          <Redirect to="/statistics" />
+          <Redirect to="/home" />
         </Route>
 
-        <Route path="/statistics" component={Statistics} />
+        <Route path="/home" component={Statistics} />
+        <Route path="/news" component={News} />
+        <Route path="/expertAdvice" component={Advice} />
       </Switch>
     </div>
   </HashRouter>
