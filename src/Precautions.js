@@ -2,7 +2,7 @@ import React from "react";
 // import './style.css'
 function Precautions() {
   return (
-    <>
+    <div>
       <h2>Protect yourself and others from getting sick</h2>
       <hr />
 
@@ -32,7 +32,7 @@ function Precautions() {
           src="https://www.who.int/images/default-source/health-topics/coronavirus/risk-communications/general-public/handshaking.tmb-1920v.png?sfvrsn=4aed53c5_5"
         />
       </article>
-    </>
+    </div>
   );
 }
 
