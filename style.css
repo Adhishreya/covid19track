@@ -1,0 +1,227 @@
+h1, p {
+  font-family: Lato;
+}
+li{
+  background: black!important;
+}
+.report{
+  /* font-size: 2em; */
+}
+ .nav {
+  color:white;
+}
+
+#root{
+      background:black;
+}
+    .cards:hover{
+        transform: scale(1.1);
+        border-style: solid!important;
+        border: 2px  papayawhip;
+    }
+table, th, td {
+  border: 1px solid black;
+}
+html,body{
+  height:100%;
+  background: black;
+  color:white;
+}
+.container{
+    grid-row-gap: 2vh;
+}
+
+nav{
+  color:white!important;
+
+}
+
+th, td {
+  padding: 15px;
+}
+nav{
+  background: black;
+}
+
+img{
+  width:100%;
+}
+
+
+
+ .cards{
+        /* width:70%; */
+        align-self: center;
+        margin-top: 20px;
+        margin-left: 20%;
+        text-align: center;
+  
+        /* flex: 0 0 20%; */
+        /* height: 30vh; */
+           width:fit-content;
+            display:flex;
+            flex-wrap: wrap;
+            height: fit-content;
+            color: white;
+            border-radius:5%; 
+    }
+   
+
+@media screen and (min-width: 1040px){
+  .symptoms{
+           grid-template-columns:repeat(4,1fr)!important ;
+  }
+    .container{
+        justify-content: space-around;
+       
+        /* align-content: center; */
+       
+    background: transparent;
+        overflow: hidden;
+        grid-template-columns:repeat(3,1fr) ;
+        scroll-behavior: unset;
+        display: grid;
+        
+    }
+ 
+ 
+    .cards{
+        /* align-self: center; */
+         width: 40vh;
+         margin-top: 20px;
+  
+            display:flex;
+            flex-wrap: wrap;
+            height: fit-content;
+        cursor: pointer; margin-left: 10%;
+        /* background-color: antiquewhite; */
+    }
+.cards:nth-child(even){
+  background-color: "blue"
+}
+    .cards:hover{
+        transform: scale(1.1);
+        border-style: solid;
+        border: 2px  papayawhip;
+    }
+    img{
+          height:100%;
+          width: 100%;
+        }
+}
+
+@media screen and (min-width:573px) and ( max-width : 1031px) {
+        /* html, body {margin: 0; height: 100%; overflow: hidden} */
+        .container{
+              background: transparent;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            width: 100%;
+            /* grid-column-start: auto; */
+          
+            /* mar */
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* flex-grow: inherit; */
+            /* flex-wrap: wrap; */
+        }
+        .cards{
+            /* width: max-content; */
+            /* background-color: darkgray; */
+            /* width: 80%; */
+            margin-left: 10%;
+               width:fit-content;
+            display:flex;
+            flex-wrap: wrap;
+            height: fit-content;
+             margin-top: 20px;
+        }
+        .cards:focus{
+            transform: scale(1.1);
+        }
+        img{
+          height:100%;
+          width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        /* html, body {margin: 0; height: 100%; overflow: hidden} */
+        .container{
+      background: transparent;
+            display: grid;
+            width: 100%;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            /* flex-grow: inherit; */
+            flex-wrap: wrap;
+             margin-top: 20px;
+        }
+        nav{
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
+          color:antiquewhite;
+          
+
+        }
+      
+        .nav{
+   
+          padding-right: 90px;
+          /* background-color: red; */
+          padding: 20px!important;
+       
+          width: fit-content;
+        }
+        .cards,img{
+            /* width: max-content; */
+            left:0;
+            margin-left: 0%!important;
+            /* background-color: darkgray; */
+            width:fit-content;
+            display:flex;
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+        .cards:focus{
+            transform: scale(1.1);
+        }
+
+        img{
+          height:100%;
+          width: 100%;
+        }
+    }
+
+    .nav{
+  text-align: center;
+  text-align-last: center;
+  width:10vw;
+  height:5vh;
+   text-decoration:none;
+   background: transparent;
+}
+.nav{
+  width:fit-content!important;
+}
+
+@media screen and (max-width: 500px){
+
+  nav{
+    display: grid!important;
+  
+  }
+}
+
+.nav:hover{
+ transform: scale(1.2);
+}
+
+.text{
+  text-align: center;
+}
+
+img{
+  align-self: center
+}
