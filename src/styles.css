@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap");
+body {
+  font-family: "Texturina", serif;
+}
+.App {
+  /* font-family: sans-serif; */
+  text-align: center;
+}
+.country {
+  /* height: 20vh; */
+  /* display: flex; */
+  /* text-align: center; */
+  /* border-radius: 10%;
+  border: none;
+  box-shadow: 2px 2px gray; */
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  padding: 2rem;
+  text-align: center;
+}
