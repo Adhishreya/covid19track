@@ -3,14 +3,16 @@ import { render } from "react-dom";
 
 import "./style.css";
 
-import About from "./src/About";
 
-import Symptoms from "./src/Symptoms";
-import Statistics from "./src/Statistics";
-import News from "./src/News";
-import Advice from "./src/Advice";
-import DisplayMapClass from "./src/DisplayMapClass";
-import Trial from "./src/Trial";
+
+import Symptoms from "./Symptoms";
+// import Statistics from "./Statistics";
+import StateWise from './Statewise'
+import About from "./About";
+import News from "./News";
+import Advice from "./Advice";
+import DisplayMapClass from "./DisplayMapClass";
+import Trial from "./Trial";
 import {
   HashRouter,
   Switch,
@@ -70,7 +72,7 @@ const App = () => (
           <Redirect to="/home" />
         </Route>
 
-        <Route path="/home" component={Statistics} />
+        <Route path="/home" component={StateWise} />
         <Route path="/news" component={News} />
         <Route path="/expertAdvice" component={Advice} />
       </Switch>
